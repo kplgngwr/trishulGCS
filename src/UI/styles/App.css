@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100%; /* Adjust height based on availability/requirement */
+  overflow: hidden;
+}
+
+.gcs-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f7f6f6;
+  color: #ffffff;
+  flex: 1;
+  margin-right: 0px; /* Start with no margin */
+  transition: margin-right 0.3s ease;
+}
+
+.sidebar.expanded + .gcs-container {
+  margin-right: 200px; /* Adjust margin when sidebar is expanded */
+}

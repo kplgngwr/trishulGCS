@@ -1,0 +1,42 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr; 
+  gap: 0.5rem;
+  height: 86vh; /* Utilize full height */
+  padding: 0.5rem;
+  background-color: #e2e0f7;
+}
+
+.chart-section {
+  background-color: #80CBC4;
+  border-radius: 8px;
+  color: #c22e2e;
+  height: 100%; /* Utilize full height */
+}
+
+.right-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two rows for top and bottom grids */
+  gap: 0.5rem;
+  height: 100%; 
+}
+
+.top-grid {
+  display: grid;
+  padding: 1rem;
+  background-color: #80CBC4 ;
+  color: #0f0e0e;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for bottom left and right */
+  gap: 0.5rem;
+}
+
+.bottom-left, .bottom-right {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #ffffff;
+}
